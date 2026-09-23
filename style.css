@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap');
+
+
+** {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff5f8;
+    color: #7d3048;
+    font-family: Arial, sans-serif;
+}
+
+
+/* CABEÇALHO */
+
+header {
+    background-color: #ffffff;
+    padding: 20px 8%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-bottom: 2px solid #f4d4df;
+}
+
+header h1 {
+    color: #b52b55;
+}
+
+nav a {
+    color: #8c5262;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+nav a:hover {
+    color: #d64d78;
+}
+
+
+/* INÍCIO */
+
+.inicio {
+    min-height: 550px;
+
+    padding: 70px 10%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 50px;
+}
+
+.inicio div {
+    max-width: 450px;
+}
+
+.inicio h2 {
+    font-size: 45px;
+    margin: 15px 0;
+
+    color: #a52348;
+}
+
+.inicio p {
+    line-height: 1.7;
+}
+
+.inicio img {
+    width: 350px;
+    height: 430px;
+
+    object-fit: cover;
+
+    border-radius: 10px;
+    border: 8px solid white;
+
+    box-shadow: 0 5px 20px #e8b9c7;
+}
+
+
+/* GALERIA */
+
+#galeria {
+    padding: 70px 8%;
+    background-color: #ffeaf1;
+}
+
+#galeria h2,
+.sobre h2 {
+    text-align: center;
+    margin-bottom: 35px;
+
+    color: #a52348;
+}
+
+.galeria {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+.galeria img {
+    width: 100%;
+    height: 280px;
+
+    object-fit: cover;
+
+    border-radius: 10px;
+
+    border: 5px solid white;
+}
+
+
+/* SOBRE */
+
+.sobre {
+    padding: 70px 10%;
+    text-align: center;
+}
+
+.sobre p {
+    max-width: 600px;
+
+    margin: auto;
+
+    line-height: 1.8;
+}
+
+
+/* RODAPÉ */
+
+footer {
+    padding: 25px;
+
+    text-align: center;
+
+    background-color: #a52348;
+
+    color: white;
+}
+
+
+/* CELULAR */
+
+@media (max-width: 700px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .inicio {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .galeria {
+        grid-template-columns: 1fr;
+    }
+
+}
